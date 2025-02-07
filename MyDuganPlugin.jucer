@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="vtbfIB" name="MyDuganPlugin" projectType="audioplug" jucerFormatVersion="1"
+              pluginFormats="buildAU,buildStandalone">
+  <MAINGROUP id="xFbahh" name="MyDuganPlugin">
+    <GROUP id="{AFC3B829-3408-D8B9-8AD5-DE1FD39CE354}" name="Source">
+      <FILE id="T0EZYm" name="ChannelStripComponent.cpp" compile="1" resource="0"
+            file="Source/ChannelStripComponent.cpp"/>
+      <FILE id="zHkc0q" name="ChannelStripComponent.h" compile="0" resource="0"
+            file="Source/ChannelStripComponent.h"/>
+      <FILE id="mpWflT" name="EnhancedDuganAGC.cpp" compile="1" resource="0"
+            file="Source/EnhancedDuganAGC.cpp"/>
+      <FILE id="I2NgZp" name="EnhancedDuganAGC.h" compile="0" resource="0"
+            file="Source/EnhancedDuganAGC.h"/>
+      <FILE id="SKbhI3" name="LockFreeFifo.h" compile="0" resource="0" file="Source/LockFreeFifo.h"/>
+      <FILE id="rJAaTq" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="KHXknG" name="MLSpeechDetector.cpp" compile="1" resource="0"
+            file="Source/MLSpeechDetector.cpp"/>
+      <FILE id="FptJwu" name="MLSpeechDetector.h" compile="0" resource="0"
+            file="Source/MLSpeechDetector.h"/>
+      <FILE id="P6jNld" name="MyDuganAutomixer.cpp" compile="1" resource="0"
+            file="Source/MyDuganAutomixer.cpp"/>
+      <FILE id="AzmTpW" name="MyDuganAutomixer.h" compile="0" resource="0"
+            file="Source/MyDuganAutomixer.h"/>
+      <FILE id="rBvmuu" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="aEckk1" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="ICsxWU" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="JBOAaH" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_analytics" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_animation" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_box2d" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_javascript" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_osc" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" xcodeValidArchs="arm64,arm64e,i386,x86_64">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="MyDuganPlugin"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="MyDuganPlugin"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_analytics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_animation" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_box2d" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_javascript" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_osc" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
